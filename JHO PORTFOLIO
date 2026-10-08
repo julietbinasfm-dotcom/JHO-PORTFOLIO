@@ -1,0 +1,116 @@
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+
+    <!-- SEO -->
+    <title>Jho | Creative Social Media Manager & Content Creator</title>
+
+    <meta
+      name="description"
+      content="Jho is a creative Social Media Manager and Content Creator helping brands turn strategy into engaging content, visuals, and digital experiences that connect and convert."
+    />
+
+    <meta name="author" content="Jho" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large"
+    />
+
+    <!-- Browser theme color -->
+    <meta name="theme-color" content="#F4F4ED" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Security / privacy -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta
+      name="referrer"
+      content="strict-origin-when-cross-origin"
+    />
+
+    <!-- Desktop avatar preload -->
+    <link
+      rel="preload"
+      as="image"
+      href="/avatar.svg"
+      fetchpriority="high"
+      media="(min-width: 1100px)"
+    />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Jho" />
+    <meta
+      property="og:title"
+      content="Jho | Creative Social Media Manager & Content Creator"
+    />
+    <meta
+      property="og:description"
+      content="Where strategy meets storytelling. Explore Jho's social media, content creation, and digital marketing portfolio."
+    />
+
+    <!-- Add these after your website is deployed -->
+    <!--
+    <meta
+      property="og:url"
+      content="https://yourdomain.com/"
+    />
+
+    <meta
+      property="og:image"
+      content="https://yourdomain.com/share.png"
+    />
+    -->
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Jho | Creative Social Media Manager & Content Creator"
+    />
+    <meta
+      name="twitter:description"
+      content="Where strategy meets storytelling. Explore Jho's social media, content creation, and digital marketing portfolio."
+    />
+
+    <!-- Theme before first paint -->
+    <script>
+      (function () {
+        try {
+          document.documentElement.dataset.theme =
+            localStorage.getItem('theme') === 'dark'
+              ? 'dark'
+              : 'light';
+        } catch (e) {
+          document.documentElement.dataset.theme = 'light';
+        }
+
+        if (
+          document.documentElement.dataset.theme === 'dark'
+        ) {
+          var bar = document.querySelector(
+            'meta[name="theme-color"]'
+          );
+
+          if (bar) {
+            bar.setAttribute('content', '#070B14');
+          }
+        }
+      })();
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+```
